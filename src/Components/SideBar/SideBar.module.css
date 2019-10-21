@@ -1,6 +1,6 @@
 .sidebar_container {
     background-color: #1E2A36;
-    width: 476px;
+    width: 35%;
     height: 1000px;
 }
 
@@ -12,6 +12,11 @@
 
 .sidebar_logo_section {
     position: relative;
+}
+
+.sidebar_logo_img {
+    /* margin-right: 51px; */
+    margin: 0;
 }
 
 .sidebar_logo_section::after {

@@ -1,0 +1,134 @@
+.decl_section {
+    background-color: #1E2A36;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.decl_title_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding-right: 132px;
+    position: relative;
+}
+
+.decl_title_text::before {
+    content: url('../../image/Arrow.png');
+    margin: 0;
+    display: block;
+    position: absolute;
+    left: -56px;
+    top: 3px;
+}
+
+.decl_items {
+    list-style: none;
+    padding-right: 78px;
+}
+
+.decl_item {
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #4CA34C;
+    position: relative;
+}
+
+.decl_item::after {
+    content: url('../../image/OvalGreen.png');
+    margin: 0;
+    display: block;
+    position: absolute;
+    transform: translate(345px, -21px);
+}
+
+.decl_item_red {
+    margin-bottom: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #DE4D3B;
+}
+
+.decl_item_red::after {
+    content: url('../../image/OvalRed.png');
+    margin: 0;
+    display: block;
+    position: absolute;
+    transform: translate(345px, -27px);
+}
+
+.decl_item_white {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #BCBFC3;
+    margin-bottom: 20px;
+    position: relative;
+    transition: all 0.5s ease-out;
+}
+
+.decl_item_white::after {
+    content: url('../../image/Oval.png');
+    margin: 0;
+    display: block;
+    position: absolute;
+    right: -43px;
+    top: 0;
+    opacity: 1;
+    transition: all 0.5s ease-out;
+}
+
+.decl_item_white::before {
+    content: url('../../image/OvalWhite.png');
+    margin: 0;
+    display: block;
+    position: absolute;
+    right: -43px;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.decl_item_white:hover {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.decl_item_white:hover::before {
+    opacity: 1;
+}
+
+.decl_item_white:hover::after {
+    opacity: 0;
+}
+
+.decl_button {
+    width: 380px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CA34C;
+    background-color: #1E2A36;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+    border: 0.5px solid #4CA34C;
+    padding: 10px 65px 10px 65px;
+}
